@@ -4,38 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="pyq.css">
+    <script src="main.js" defer></script>
     <title>PYQ</title>
 </head>
 <body>
     <section class="frontpage">
-        <nav>
-            <div class="navbar">
-                <ul>
-                    <li><a href="index.html" class="navbar-link">Home</a></li>
-                    <li><a href="pyq.html" class="navbar-link">PYQ</a></li>
-                    <li><a href="http://www.nsit.ac.in/library/" class="navbar-link">Notes</a></li>
-                    <li><a href="Placement.html" class="navbar-link">Placements</a></li>
-                    <li><a href="http://www.nsit.ac.in/library/" class="navbar-link">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+          <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="img-container">
+         <img src="images/logo.png" alt="logo" onclick="home()">
+        </div> 
+        
+        <!-- hamburger menu -->
+        <a class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+
+
+
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="selected" href="pyq.html">PYQ</a></li>
+                <li><a href="">NOTES</a></li>
+                <li><a href="Placement.html">PLACEMENTS</a></li>
+                <li><a href="">CONTACT US</a></li>
+            </ul>
+        </div>
+    </header>
         <div class="maincontainer">
         <div class="content">
             <div class="a" id="a1"><h1>Notes</h1>
-                <div class="images"><img src="unnamed.png" alt=""></div>
+                <div class="images"><img src="images/unnamed.png" alt=""></div>
                 
             </div>
             <div class="a" id="a2"><h1>Previous Year Question Paper</h1>
-            <div class="images"><img src="download (1).jpg" alt=""></div></div>
+            <div class="images"><img src="images/download (1).jpg" alt=""></div></div>
         </div>
         <div class="content">
-            <div class="a" id="a1"><h1>Placements</h1><div class="images"><img src="placement-services.png" alt=""></div></div>
-            <div class="a" id="a2"><h1>Books</h1><div class="images"><img src="gettyimages-157482029-612x612.jpg" alt=""></div></div>
+            <div class="a" id="a1"><h1>Placements</h1><div class="images"><img src="images/placement-services.png" alt=""></div></div>
+            <div class="a" id="a2"><h1>Books</h1><div class="images"><img src="images/gettyimages-157482029-612x612.jpg" alt=""></div></div>
         </div>
         <div class="content">
-            <div class="a" id="a1"><h1>Playlists</h1><div class="images"><img src="how-to-create-a-youtube-playlist-for-videos-1570194177.jpg" alt=""></div></div>
-            <div class="a" id="a2"><h1>Pratical Files</h1><div class="images"><img src="PracticalA460pagesTransparentPlasticCoverFileFolderDocumentFolderBlue63483657783155750011453122069.jpg" alt=""></div></div>
+            <div class="a" id="a1"><h1>Playlists</h1><div class="images"><img src="images/how-to-create-a-youtube-playlist-for-videos-1570194177.jpg" alt=""></div></div>
+            <div class="a" id="a2"><h1>Pratical Files</h1><div class="images"><img src="images/PracticalA460pagesTransparentPlasticCoverFileFolderDocumentFolderBlue63483657783155750011453122069.jpg" alt=""></div></div>
         </div>
         </div>
         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
