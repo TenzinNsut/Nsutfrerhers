@@ -242,10 +242,10 @@ html{
 
 
 .frontpage {
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     background-image: url('images/herobackground.svg');
-    object-fit: contain;
+    object-fit: cover;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
