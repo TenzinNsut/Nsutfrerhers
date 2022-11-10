@@ -13,104 +13,122 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4b6538bca3.js" crossorigin="anonymous"></script>
     <title>Placements</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="placements.css">
+    <script src="main.js" defer></script>
 </head>
 
 <body>
     <div id="loader" class="center"></div>
     <section class="frontpage">
-        <nav>
-            <div class="navbar">
-                <ul>
-                    <li><a href="index.html" class="navbar-link">Home</a></li>
-                    <li><a href="pyq.html" class="navbar-link">PYQ</a></li>
-                    <li><a href="http://www.nsit.ac.in/library/" class="navbar-link">Notes</a></li>
-                    <li><a href="Placement.html" class="navbar-link">Placements</a></li>
-                    <li><a href="http://www.nsit.ac.in/library/" class="navbar-link">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+         <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="img-container">
+         <img src="images/logo.png" alt="logo" onclick="home()">
+        </div> 
+        
+        <!-- hamburger menu -->
+        <a class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+
+
+
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pyq.html">PYQ</a></li>
+                <li><a href="">NOTES</a></li>
+                <li><a class="selected" href="Placement.html">PLACEMENTS</a></li>
+                <li><a href="">CONTACT US</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- intro -->
         <div class="heading"><h1>Placements</h1></div>
         
         <div class="maincontainer">
         <div class="content">
             <div class="a" id="a1">
                 <h1>IIT DELHI</h1>
-                <img src="download.png" alt="">
+                <img src="images/download.png" alt="">
             </div>
             <div class="a" id="a2">
                 <h1>NSUT</h1>
-                <img src="download.jpg" alt="">
+                <img src="images/download.jpg" alt="">
             </div>
         </div>
         <div class="content">
             <div class="a" id="a1">
                 <h1>DTU</h1>
-                <img src="download (2).jpg" alt="">
+                <img src="images/download (2).jpg" alt="">
             </div>
             <div class="a" id="a2">
                 <h1>IGDTU</h1>
-                <img src="igdtu.jpg" alt="">
+                <img src="images/igdtu.jpg" alt="">
             </div>
         </div>
         <div class="content">
             <div class="a" id="a1">
                 <h1>NIT DELHI</h1>
-                <img src="download (3).jpg" alt="">
+                <img src="images/download (3).jpg" alt="">
             </div>
             <div class="a" id="a2">
                 <h1>IIIT HYDERABAD</h1>
-                <img src="images.jpg" alt="">
+                <img src="images/images.jpg" alt="">
             </div>
         </div>
         <div class="content">
             <div class="a" id="a1">
                 <h1>Jadhavpur University</h1>
-                <img src="ju.jpg" alt="">
+                <img src="images/ju.jpg" alt="">
             </div>
             <div class="a" id="a2">
                 <h1>BITS Pilani</h1>
-                <img src="download (4).jpg" alt="">
+                <img src="images/download (4).jpg" alt="">
             </div>
         </div>
         <div class="content">
             <div class="a" id="a1">
                 <h1>IIT KHARAGPUR </h1>
-                <img src="download (5).jpg" alt="">
+                <img src="images/download (5).jpg" alt="">
             </div>
             <div class="a" id="a2">
                 <h1>IIT KANPUR</h1>
-                <img src="images (1).jpg" alt="">
+                <img src="images/images (1).jpg" alt="">
             </div>
         </div>
         <div class="content">
             <div class="a" id="a1">
                 <h1>IIT MADRAS</h1>
-                <img src="iitm.jpeg" alt="">
+                <img src="images/iitm.jpeg" alt="">
             </div>
             <div class="a" id="a2">
                 <h1>IIT BOMBAY</h1>
-                <img src="iitb.jpeg" alt="">
+                <img src="images/iitb.jpeg" alt="">
             </div>
         </div>
         <div class="content">
             <div class="a" id="a1">
                 <h1>NIT Calicut</h1>
-                <img src="nitcalicut.jpg" alt="">
+                <img src="images/nitcalicut.jpg" alt="">
             </div>
             <div class="a" id="a2">
                 <h1>Nit Jaipur</h1>
-                <img src="download (6).jpg" alt="">
+                <img src="images/download (6).jpg" alt="">
             </div>
         </div>
         <div class="content">
             <div class="a" id="a1">
                 <h1>NIT Surthkal</h1>
-                <img src="nitk.jpg" alt="">
+                <img src="images/nitk.jpg" alt="">
             </div>
             <div class="a" id="a2">
                 <h1>NIT Warangal</h1>
-                <img src="image.webp" alt="">
+                <img src="images/image.webp" alt="">
             </div>
         </div>
     </div>
@@ -142,6 +160,5 @@
         </div>
     </section>
 </body>
-<script src="t.js"></script>
 
 </html>
