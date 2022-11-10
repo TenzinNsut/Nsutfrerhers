@@ -146,10 +146,7 @@ html{
         margin: 50px auto;
         /* display: block; */
     }
-    .navbar-links li a{
-        /* margin-top: 3rem;
-        padding: 1rem 1rem ; */
-    }
+
     .img-container{
         width: 100%;
         display: flex;
