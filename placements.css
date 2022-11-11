@@ -393,3 +393,7 @@ p{
 .ins:hover{
   background-color: #f90e0e;
 }
+
+.content a{
+    text-decoration: none;
+}
