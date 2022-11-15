@@ -20,57 +20,65 @@
 <body>
     
     <div id="loader" class="center"></div>
+    <section class="frontpage2">
+        <header class="navbar">
+            <div class="img-container">
+             <img src="images/logo2.png" alt="logo" onclick="home()">
+            </div> 
+            
+            <!-- hamburger menu -->
+            <a class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+    
+    
+    
+            <div class="navbar-links">
+                <ul>
+                    <li><a class="selected" href="index.html">Home</a></li>
+                    <li><a href="pyq.html">PYQ</a></li>
+                    <li><a href="notes.html">NOTES</a></li>
+                    <li><a href="Placement.html">PLACEMENTS</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="information2">
+            <h1>Welcome</h1>
+            <h2>To our Freshers</h2>
+        </div>
+    </section>
     <section class="frontpage">
     <!-- Navigation Bar -->
-    <header class="navbar">
-        <div class="img-container">
-         <img src="images/logo2.png" alt="logo" >
-        </div> 
-        
-        <!-- hamburger menu -->
-        <a class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
 
-
-
-        <div class="navbar-links">
-            <ul>
-                <li><a class="selected" href="index.html">Home</a></li>
-                <li><a href="pyq.html">PYQ</a></li>
-                <li><a href="">NOTES</a></li>
-                <li><a href="Placement.html">PLACEMENTS</a></li>
-                <li><a href="">CONTACT US</a></li>
-            </ul>
-
-            <button>SignUp</button>
-            <button>Login</button>
-        </div>
-    </header>
         <!-- intro -->
         <div class="information ">
             <h1><em>"This Site is Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, molestias id! Ex
                     dignissimos nobis fugit sapiente animi natus minus. Earum! "</em></h1>
+                    <span>Team Imsfg</span>
         </div>
 
         <!-- Containers -->
         <div class="content ">
-            <div class="a" id="a1"><h1>Notes</h1>
+            <a href="notes.html"><div class="a" id="a1"><h1>Notes</h1>
                 <div class="images"><img src="images/notes-icon.svg" alt=""></div>
                 
-            </div>
+            </div></a>
+            <a href="pyq.html">
             <div class="a" id="a2"><h1>Previous Year Question Paper</h1>
-            <div class="images"><img src="images/pyq-icon.svg" alt=""></div></div>
+            <div class="images"><img src="images/pyq-icon.svg" alt=""></div></div></a>
         </div>
         <div class="content ">
-            <div class="a" id="a1"><h1>Placements</h1><div class="images"><img src="images/placements-icon.svg" alt=""></div></div>
-            <div class="a" id="a2"><h1>Books</h1><div class="images"><img src="images/books-icon.svg" alt=""></div></div>
+            <a href="Placement.html">
+            <div class="a" id="a1"><h1>Placements</h1><div class="images"><img src="images/placements-icon.svg" alt=""></div></div></a>
+            <a href=""><div class="a" id="a2"><h1>Books</h1><div class="images"><img src="images/books-icon.svg" alt=""></div></div></a>
         </div>
         <div class="content ">
-            <div class="a" id="a1"><h1>Playlists</h1><div class="images"><img src="images/playlists-icon.svg" alt=""></div></div>
-            <div class="a" id="a2"><h1>Practicle Files</h1><div class="images"><img src="images/practicleFile-icon.svg" alt=""></div></div>
+            <a href=""><div class="a" id="a1"><h1>Playlists</h1><div class="images"><img src="images/playlists-icon.svg" alt=""></div></div></a>
+            <a href=""><div class="a" id="a2"><h1>Practicle Files</h1><div class="images"><img src="images/practicleFile-icon.svg" alt=""></div></div></a>
         </div>
         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     </section>

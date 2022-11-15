@@ -176,11 +176,21 @@ html{
 }
 
 
+.information2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
 
 
 
-
-
+.information2 h1,h2{
+    font-size: 80px;
+}
 
 /* ------------------intro section-------------------- */
 /* h1{
@@ -194,11 +204,11 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px auto;
-
-
+    margin:  auto;
+    padding-top: 100px;
+    flex-direction: column;
+    transition: all 350ms ease-in-out;
 }
-
 .information > h1{
     max-width: 800px;
     font-size: 20px;
@@ -212,6 +222,7 @@ html{
     width: 100%;
     margin: auto auto;
     
+    
 }
 .content > div > h1{
     font-family: 'Hind', sans-serif;
@@ -222,16 +233,68 @@ html{
     text-align: center;
 }
 .a{
-    width: 400px;
-    height: 150px;
+    width: 450px;
+    height: 220px;
     background-color:var(--white) ;
     margin-bottom: 10px;
-    margin-left: 20px;
+    margin-top: 10px;
+  margin-left: 10px;
     border-radius: 2%;
     opacity: 0.8;
     border:2px solid var(--dark);
     transition: all 350ms ease-in-out;
     
+}
+
+@media(max-width:500px){
+  .a{
+    width: 300px;
+    height: 220px;
+    background-color:var(--white) ;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  margin-left: 10px;
+    border-radius: 2%;
+    opacity: 0.8;
+    border:2px solid var(--dark);
+    transition: all 350ms ease-in-out;
+  }
+
+  .information2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+.information2 h1,h2{
+    font-size: 40px;
+}
+  
+  
+}
+
+@media(max-width:320px){
+  .a{
+    width: 200px;
+    height: 220px;
+     background-color:var(--white) ;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  margin-left: 10px;
+    border-radius: 2%;
+    opacity: 0.8;
+    border:2px solid var(--dark);
+    transition: all 350ms ease-in-out;
+    
+  }
+ 
+  
 }
 .a:hover{
     transform:scale(1.05);
@@ -253,7 +316,17 @@ html{
     font-family: 'Hind', sans-serif;
 }
 
-
+.frontpage2{
+    min-height: 100vh;
+    position: relative;
+    background-color: #000000   ;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: 'Hind', sans-serif;
+}
 
 /* ------------------F O O T E R-------------------------------- */
 .join{
@@ -408,3 +481,8 @@ img{
     
 }
 
+.content a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
