@@ -204,7 +204,7 @@ html{
 /* ------------------intro section-------------------- */
 
 .intro-section{
-background: url("BgImages/aboutbg.png") no-repeat;
+background: url("/BgImages/aboutbg.png") no-repeat;
   background-size: cover;
   background-position: center center;
   height: 100vh;
