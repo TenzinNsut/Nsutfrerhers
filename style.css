@@ -198,7 +198,91 @@ html{
 
 }
 
+
+
+
 /* ------------------intro section-------------------- */
+
+.intro-section{
+background: url("BgImages/aboutbg.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  position: relative;
+}
+
+.intro-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 1000px; */
+    /* text-align: center; */
+}
+
+.contain-intro{
+    margin: 6rem auto;
+
+    max-width: 1000px;
+    text-align: center;
+}
+.intro-container > .contain-intro > h1{
+    line-height: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+}
+
+
+
+
+/* .contianer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;;
+}
+
+
+
+
+.contianer h1{
+    color: white;
+    position: relative;
+    z-index: 1;
+    top: -55px;
+    text-transform: uppercase;
+    letter-spacing: 2rem; */
+    /* font-weight: 1000; */
+    /* background: linear-gradient(to right, #7D46FF, #FF449B);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text; */
+/* } */
+
+@media (max-width:576px) {
+    .contain-intro{
+        margin: auto auto;;
+    }
+    .contain-intro > h1{
+        font-size: 0.8rem;
+        letter-spacing: 0px;
+
+    }
+
+
+}
+
+/* Animations */
+.text-focus-in{-webkit-animation:text-focus-in 2.5s cubic-bezier(.55,.085,.68,.53) both;animation:text-focus-in 2.5s cubic-bezier(.55,.085,.68,.53) both}
+
+@-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+
+
+/* -------section cards ----------------- */
+
+
 /* h1{
     position: relative;
     text-align: center;
@@ -206,7 +290,7 @@ html{
     font-size: 30px;
   
 } */
-.information{
+/* .information{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -218,15 +302,12 @@ html{
     transition: all 350ms ease-in-out;
 }
 .information > h1{
-    /* max-width: 800px; */
-    /* font-size: 20px; */
+ 
     text-align: center;
     font-family:'Hind', sans-serif;
     letter-spacing: 0.1rem;
 }
 .information > span{
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    /* letter-spacing: 2px; */
     margin: 2px;
     font-family: 'Montserrat', sans-serif;
 
@@ -332,18 +413,123 @@ html{
     background-attachment: fixed;
     font-family: 'Hind', sans-serif;
 }
+ */
+ .section-cards{
+    background-color: #0c0c0c;
+    width: 100%;
+    height: 150vh;
+ }
 
-.frontpage2{
-    min-height: 100vh;
-    position: relative;
-    background-color: #000000   ;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    font-family: 'Hind', sans-serif;
+ .welcome{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* margin: 2rem 2rem; */
+    /* padding: 2rem 2rem; */
+ }
+ .welcome-box{
+    width: 600px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    /* width: 600px; */
+   
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6875rem;
+    font-size: 18px;
+
+    font-weight: 400;
+ }
+
+ .cards-container{
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+ .card{
+    margin: 5rem ;
+ }
+
+
+ .img-box > a > img{
+    /* width: 300px; */
+    width: 100%;
+    height: 17rem;
+    transition: all 300ms ease-in-out;
+ }
+
+ .img-box > a > img:hover{
+    transform: scale(1.06);
+    box-shadow: 10px 8px 8px var(--purple);
+    /* color: var(--purple); */
+    cursor: pointer;
+ }
+
+ .card-contents{
+    width: 100%;
+ }
+
+ .card-contents > a{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    text-decoration: none;
+    text-align: center;
+
+ }
+ .card-contents > a > .btn{
+    border: 1px solid white;
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    transition: all 400ms ease-in-out;
+ }
+
+ .card-contents > a > .btn:hover{
+    background-color: var(--purple);
+    border: none;
+
+ }
+ @media (max-width:576px) {
+  
+    .cards-container{
+        display: grid;
+        grid-auto-flow: column;
+        margin-top: 10rem;
+        /* grid-template-columns:  repeat(2, 500px); */
+    }
+    .img-box > a > img{
+        height: 10rem;
+    }
+    .card{
+        margin: 5px;
+
+    }
+    .collapse.active{
+        display: none;
+        height: 0vh;
+       }
+
+
+    
+ }
+
+ 
+/* .card-contents > a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px solid white;
+
+    
+    padding: 0.5rem 1rem;
+    transition: all 300ms ease-in-out;
 }
+.card-contents > a:hover{
+
+} */
+
+
+
+
 
 /* ------------------F O O T E R-------------------------------- */
 .join{
