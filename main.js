@@ -45,30 +45,8 @@ function topFunction() {
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
 const navbarLinks = document.getElementsByClassName('navbar-links')[0];
 const navbar = document.getElementsByClassName('navbar')[0];
-const sections = document.getElementsByClassName('collapse');
-
 
 toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active');
   navbar.classList.toggle('active');
-  for (let i = 0; i < sections.length; i++) { 
-    sections[i].classList.toggle('active');
-}
 })
-
-
-
-// background 
-document.addEventListener("mousemove", parallax);
-function parallax(e) { 
-    document.querySelectorAll(".object").forEach(function (move) {
-        
-        var moving_value = move.getAttribute("data-value");
-        var x = (e.clientX * moving_value) / 100;
-        var y = (e.clientY * moving_value) /100;
-
-        move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
-
-    })
-}
-
